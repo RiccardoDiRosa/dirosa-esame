@@ -3,8 +3,9 @@ import { MovieList } from '../components/MovieList';
 import type { MovieListItem, MovieSearchResponse } from '../types';
 import './MovieListPage.css';
 
+const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 const MOVIES_API_URL =
-  'https://api.themoviedb.org/3/search/movie?query=The%20Lord%20of%20the%20Rings&include_adult=false&language=en-US&page=1&api_key=b5e912ee3fa4fa2026803ea04bddb840';
+  `https://api.themoviedb.org/3/search/movie?query=The%20Lord%20of%20the%20Rings&include_adult=false&language=en-US&page=1&api_key=${API_KEY}`;
 
 export function MovieListPage() {
   const [movies, setMovies] = useState<MovieListItem[]>([]);

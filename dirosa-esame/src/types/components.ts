@@ -1,19 +1,5 @@
 import type { Genre, MovieDetail, MovieListItem } from './movie';
 
-export type BreadcrumbItem = {
-  label: string;
-  to?: string;
-};
-
-export type BreadcrumbProps = {
-  items: BreadcrumbItem[];
-};
-
-export type HeaderProps = {
-  breadcrumbItems?: BreadcrumbItem[];
-};
-
-
 export type MovieListProps = {
   movies: MovieListItem[];
 };
