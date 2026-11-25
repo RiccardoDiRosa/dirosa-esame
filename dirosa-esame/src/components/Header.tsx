@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 export function Header() {
@@ -5,7 +6,7 @@ export function Header() {
     <header className="header">
       <div className="header__brand">Movie App</div>
       <nav className="header__nav">
-        <a href="/">Home / Elenco</a>
+        <Link to="/">Home / Elenco</Link>
       </nav>
     </header>
   );
