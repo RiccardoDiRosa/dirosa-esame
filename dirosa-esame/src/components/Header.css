@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 20px;
+  border-bottom: 2px solid #333;
+  background: #f0f0f0;
+  font-family: 'Courier New', Courier, monospace;
+  color: #222;
+}
+
+.header__brand {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.header__nav a {
+  display: inline-block;
+  border: 1px solid #333;
+  padding: 6px 12px;
+  background: #fff;
+  color: #222;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.header__nav a:hover {
+  text-decoration: underline;
+}
